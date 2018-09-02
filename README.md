@@ -1,6 +1,6 @@
 # sample-dashboard
 
-> A jojonomic's Vue.js sample project
+> Finance App project
 
 ## Build Setup
 
