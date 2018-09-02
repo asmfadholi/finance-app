@@ -2,7 +2,7 @@
 
 import Vue from 'vue';
 import Router from 'vue-router';
-import Example from './modules/example/jExample';
+import Example from './modules/example/example';
 
 Vue.use(Router);
 
@@ -11,7 +11,7 @@ const moduleRoutes = [Example];
 const baseRoutes = [
   {
     path: '*',
-    redirect: '/',
+    redirect: '/example',
     // beforeEnter(to, from, next) {
     //   const idToken = localStorage.getItem('idToken');
     //   const userId = localStorage.getItem('userId');
