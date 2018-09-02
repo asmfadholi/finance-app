@@ -1,0 +1,64 @@
+// sass-lint:disable-all
+// === BASIC COLORS ===
+$green-basic-color: #41ad49;
+$light-blue-basic-color: #59b0b2;
+$blue-basic-color: #42a5ce;
+$tosca-basic-color: #0a848e;
+$violet-basic-color: #3f51b5;
+$purple-basic-color: #8a0d4f;
+$light-purple-basic-color: #9c0d5c;
+$red-basic-color: #d2232a;
+$orange-basic-color: #f36f21;
+$yellow-basic-color: #f8991d;
+$yellow-light-basic-color: #ffeb3b;
+$dark-brown-basic-color: #3e2723;
+$brown-basic-color: #4d3921;
+$brownish-grey-basic-color: #938270;
+$grey-basic-color: #808285;
+$light-grey-basic-color: #dfdfea;
+
+// === jSidebar Colors ===
+$jSidebar-menu-active-background-color: #2e2c2e;
+$jSidebar-menu-active-color: #42a5ce;
+
+// === status color ===
+$success: $green-basic-color;
+$reimbursed: $green-basic-color;
+$disbursed: $green-basic-color;
+$signed: $green-basic-color;
+$attend: $green-basic-color;
+$checkin: $green-basic-color;
+$scheduled: $green-basic-color;
+$assigned: $green-basic-color;
+$reimbursement: $light-blue-basic-color;
+$purchased: $light-blue-basic-color;
+$primary: $blue-basic-color;
+$approved: $blue-basic-color;
+$number-format: $blue-basic-color;
+$signature: $blue-basic-color;
+$checkout: $blue-basic-color;
+$done: $blue-basic-color;
+$attendance: $blue-basic-color;
+$paid: $tosca-basic-color;
+$verified: $tosca-basic-color;
+$cost-center: $tosca-basic-color;
+$rejected: $purple-basic-color;
+$cash-advance: $light-purple-basic-color;
+$danger: $red-basic-color;
+$canceled: $red-basic-color;
+$absence: $red-basic-color;
+$warning: $orange-basic-color;
+$unverified: $orange-basic-color;
+$process: $yellow-basic-color;
+$sent: $yellow-basic-color;
+$submitted: $yellow-basic-color;
+$late: $yellow-basic-color;
+$info: $yellow-light-basic-color;
+$unsigned: $yellow-light-basic-color;
+$aborted: $dark-brown-basic-color;
+$cart: $brown-basic-color;
+$reported: $brownish-grey-basic-color;
+$leave: $brownish-grey-basic-color;
+$draft: $grey-basic-color;
+$on-leave: $grey-basic-color;
+$closed: $grey-basic-color;

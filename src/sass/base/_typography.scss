@@ -1,0 +1,99 @@
+// sass-lint:disable-all
+
+$font-family: (
+  Gotham-Bold: 'Gotham-Bold',
+  Gotham-Book: 'Gotham-Book',
+  Gotham-ExtraLight: 'Gotham-ExtraLight',
+  Gotham-Light: 'Gotham-Light',
+  Gotham-Medium: 'Gotham-Medium',
+  Gotham-Thin: 'Gotham-Thin');
+
+//mixin @font-face link
+@mixin font-face($type, $name) {
+  @font-face {
+    font-family: $name;
+    font-style: normal;
+    src:
+    url('../Public/Fonts/Gotham/#{$type}.eot'),
+    url('../Public/Fonts/Gotham/#{$type}.eot?#iefix') format('embedded-opentype'),
+    url('../Public/Fonts/Gotham/#{$type}.woff2') format('woff2'),
+    url('../Public/Fonts/Gotham/#{$type}.woff') format('woff'),
+    url('../Public/Fonts/Gotham/#{$type}.ttf') format('truetype'),
+    url('../../Public/Fonts/Gotham/#{$type}.svg##{$type}') format('svg');
+  }
+}
+
+//create each font-family
+@each $type, $name in $font-family {
+  @include font-face($type, $name);
+}
+
+//default for header
+@mixin font-header($line-height) {
+  font-family: 'Gotham-Bold';
+  line-height: $line-height;
+}
+
+h1 {
+  @include font-header(42px);
+  font-size: 36px;
+}
+
+h2 {
+  @include font-header(28px);
+  font-size: 24px;
+}
+
+h3 {
+  @include font-header(26px);
+  font-size: 18px;
+}
+
+h4 {
+  @include font-header(20px);
+  font-size: 14px;
+}
+
+//default for paragraph, label and sidebar
+@mixin font-content($line-height) {
+  font-family: 'Gotham-Book';
+  line-height: $line-height;
+}
+
+p {
+  @include font-content(18px);
+  font-size: 12px;
+}
+
+label {
+  @include font-content(18px);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.sidebar-item,
+span,
+nav {
+  @include font-content(20px);
+  font-size: 11px;
+}
+
+//default for button tag
+button {
+  font-family: 'Gotham-Medium';
+  font-size: 14px;
+  line-height: 20px;
+}
+
+// choose text-tarnsform with class
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
